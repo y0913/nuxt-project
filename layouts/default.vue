@@ -1,7 +1,8 @@
 <template>
   <v-app dark>
+    <Header />
     <v-main>
-      <v-container>
+      <v-container style="max-width: 1000px">
         <Nuxt />
       </v-container>
     </v-main>
@@ -15,7 +16,12 @@
 </template>
 
 <script>
+import Header from '~/components/Common/Header.vue'
 export default {
+  name: 'App',
+  components: {
+   Header
+  },
   data () {
     return {
       clipped: false,
