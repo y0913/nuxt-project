@@ -2,9 +2,9 @@
   <v-app dark>
     <Header />
     <v-main>
-      <v-container>
+      <div style="margin: 0;">
         <Nuxt />
-      </v-container>
+      </div>
     </v-main>
     <v-footer
       :absolute="!fixed"
