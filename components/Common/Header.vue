@@ -17,6 +17,8 @@
             plain
             :to="root"
             color="black"
+            class="font-weight-bold"
+            style="font-size: 1.2em;"
           >
           {{title}}
           </v-btn>

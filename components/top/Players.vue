@@ -1,18 +1,17 @@
 <template>
-  <div
-    class="about"
-    style="width:100%"
-  >
-    <v-row dense>
+  <div class="players">
+    <v-row>
       <v-col>
         <v-card>
-          <v-img
-            src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
-            class="white--text align-end"
-            height="600px"
-          >
-            <v-card-title>{{title}}</v-card-title>
-          </v-img>
+          <div class="d-flex justify-center">
+            <v-img
+              src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+              class="white--text align-end"
+              height="600px"
+            >
+              <v-card-title>{{title}}</v-card-title>
+            </v-img>
+          </div>
         </v-card>
       </v-col>
     </v-row>
