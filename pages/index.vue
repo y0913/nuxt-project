@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Carousel from '~/components/Common/Carousel.vue'
+import Carousel from '~/components/top/Carousel.vue'
 export default {
   name: 'App',
   components: {
