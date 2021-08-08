@@ -6,21 +6,18 @@
         <Nuxt />
       </div>
     </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
-    </v-footer>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import Header from '~/components/Common/Header.vue'
+import Footer from '~/components/Common/Footer.vue'
 export default {
   name: 'App',
   components: {
-   Header
+   Header,
+   Footer
   },
   data () {
     return {
