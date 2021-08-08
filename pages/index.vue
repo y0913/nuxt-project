@@ -6,17 +6,22 @@
     <div class="about">
       <About />
     </div>
+    <div class="players">
+      <Players />
+    </div>
   </div>
 </template>
 
 <script>
 import Carousel from '~/components/top/Carousel.vue'
 import About from '~/components/top/About.vue'
+import Players from '~/components/top/Players.vue'
 export default {
   name: 'App',
   components: {
    Carousel,
-   About
+   About,
+   Players
   },
   data () {
     return {
@@ -30,3 +35,10 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+  .top {
+    margin: 0;
+    padding: 0;
+  }
+</style>
