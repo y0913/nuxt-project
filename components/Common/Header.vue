@@ -31,6 +31,7 @@
             :key="i"
             text
             color="red"
+            :to="menu.root"
           >
             {{menu.name}}
           </v-btn>
@@ -51,15 +52,15 @@ export default {
     return {
       menus:[
         {
-          root:"/",
+          root:"About",
           name:"About Team"
         },
         {
-          root:"/",
+          root:"Players",
           name:"Players"
         },
         {
-          root:"/",
+          root:"Join",
           name:"Join Team?"
         },
       ],
