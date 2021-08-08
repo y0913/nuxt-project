@@ -12,36 +12,29 @@
     <v-container style="max-width: 1000px">
       <v-row>
         <v-col cols="6" align="left">
-          <router-link to='/'>
-            <div class="top">{{title}}</div>
-          </router-link>
+          <v-btn
+            text
+            plain
+            :to="root"
+            color="black"
+          >
+          {{title}}
+          </v-btn>
         </v-col>
         <v-col
           cols="6"
           align="right"
         >
-          <v-menu offset-y>
-            <template v-slot:activator="{on}">
-              <v-btn
-                class="mt-1"
-                color="#ffffff"
-                text
-                height=40
-                width=40
-                v-on="on"
-              >
-                <v-avatar
-                  v-if="userImage"
-                  size=40
-                  color="#ffffff"
-                >
-                <!-- ある場合とない場合で分ける -->
-                  <v-icon dark>mdi-account-circle</v-icon>
-                  <!-- <img :src="userImage"> -->
-                </v-avatar>
-            </v-btn>
-            </template>
-          </v-menu>
+        <div class="btn-container">
+          <v-btn
+            v-for="(menu,i) in menus"
+            :key="i"
+            text
+            color="red"
+          >
+            {{menu.name}}
+          </v-btn>
+        </div>
         </v-col>
       </v-row>
     </v-container>
@@ -57,12 +50,23 @@ export default {
   data () {
     return {
       menus:[
-        {root:"/mypage", name:"マイページ"},
-        {root:"/account", name:"アカウント情報"},
+        {
+          root:"/",
+          name:"About Team"
+        },
+        {
+          root:"/",
+          name:"Players"
+        },
+        {
+          root:"/",
+          name:"Join Team?"
+        },
       ],
       drawer: false,
       dialog: false,
-      title: '京都フルカウンツ'
+      title: '京都フルカウンツ',
+      root: '/'
     }
   }
 };
