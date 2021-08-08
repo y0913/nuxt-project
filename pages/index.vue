@@ -1,15 +1,22 @@
 <template>
   <div class="top">
-    <Carousel />
+    <div class="slider">
+      <Carousel />
+    </div>
+    <div class="about">
+      <About />
+    </div>
   </div>
 </template>
 
 <script>
 import Carousel from '~/components/top/Carousel.vue'
+import About from '~/components/top/About.vue'
 export default {
   name: 'App',
   components: {
-   Carousel
+   Carousel,
+   About
   },
   data () {
     return {

@@ -30,6 +30,7 @@
 
 <script>
 export default {
+  name: 'Carousel',
   data () {
     return {
       colors: [
