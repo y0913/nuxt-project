@@ -30,10 +30,16 @@
             v-for="(menu,i) in menus"
             :key="i"
             text
-            color="red"
+            color="black"
             :to="menu.root"
           >
             {{menu.name}}
+          </v-btn>
+          <v-btn icon>
+            <v-icon color="blue">mdi-twitter</v-icon>
+          </v-btn>
+          <v-btn icon>
+            <v-icon color="red">mdi-instagram</v-icon>
           </v-btn>
         </div>
         </v-col>
