@@ -1,6 +1,9 @@
 <template>
 <v-container>
-    <div class="headline font-weight-medium text-center">{{ title }}</div>
+    <div class="mb-10">
+      <div class="headline font-weight-bold">{{ title }}</div>
+      <div><span class="under">{{ titleJp }}</span></div>
+    </div>
     <v-card
       class="mx-auto"
       color="#26c6da"
@@ -26,8 +29,15 @@
     name: 'News',
     data() {
       return {
-        title: '最新情報',
+        title: 'LATEST NEWS',
+        titleJp: '最新情報',
       }
     },
   }
 </script>
+
+<style scoped lang="scss">
+.under {
+  border-bottom: solid 2px red;
+}
+</style>
