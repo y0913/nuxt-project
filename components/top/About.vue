@@ -35,7 +35,6 @@
 </template>
 
 <script>
-import common from '../../assets/images/common/common.JPG'
 export default {
   name: 'About',
   data () {
@@ -44,7 +43,6 @@ export default {
       staffTitle: "スタッフメッセージ",
       otherTitle: "選手一覧ページ",
       title: "About Us",
-      common: common
     }
   }
 }
