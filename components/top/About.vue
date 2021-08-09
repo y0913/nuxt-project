@@ -26,7 +26,6 @@
           style="color: white;"
           align="right"
           justify="right"
-          @click="details"
         >
           詳しく見る
         </v-btn>

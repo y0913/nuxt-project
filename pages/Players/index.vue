@@ -45,7 +45,6 @@
               <v-btn
                 color="deep-purple lighten-2"
                 text
-                @click="details"
               >
                 詳細
               </v-btn>
@@ -82,7 +81,6 @@
               <v-btn
                 color="deep-purple lighten-2"
                 text
-                @click="details"
               >
                 詳細
               </v-btn>
@@ -119,7 +117,6 @@
               <v-btn
                 color="deep-purple lighten-2"
                 text
-                @click="details"
               >
                 詳細
               </v-btn>
@@ -127,7 +124,6 @@
           </v-card>
       </v-col>
     </v-row>
-
 </div>
 </template>
 
