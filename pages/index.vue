@@ -1,13 +1,16 @@
 <template>
   <div class="top">
-    <div class="slider">
+    <div class="mb-10">
       <Carousel />
     </div>
-    <div class="about">
+    <div class="mb-10">
+      <Players />
+    </div>
+    <div class="mb-10">
       <About />
     </div>
-    <div class="players">
-      <Players />
+    <div class="mb-10">
+      <News />
     </div>
   </div>
 </template>
@@ -16,12 +19,14 @@
 import Carousel from '~/components/top/Carousel.vue'
 import About from '~/components/top/About.vue'
 import Players from '~/components/top/Players.vue'
+import News from '~/components/top/News.vue'
 export default {
   name: 'App',
   components: {
    Carousel,
    About,
-   Players
+   Players,
+   News
   },
   data () {
     return {
