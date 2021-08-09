@@ -1,6 +1,7 @@
 <template>
   <div class="players">
-    <div class="headline font-weight-medium text-center">{{ title }}</div>
+    <div class="headline font-weight-bold">{{ title }}</div>
+    <div class="">{{ titleJp }}</div>
     <v-row
       class="fill-height"
       align="center"
@@ -127,7 +128,8 @@ export default {
   name: 'Players',
   data () {
     return {
-      title: "選手一覧"
+      title: "Players",
+      titleJp: '選手一覧'
     }
   }
 }

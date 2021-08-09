@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <div class="headline font-weight-bold">{{ title }}</div>
+    <div><span class="under">京都フルカウンツについて</span></div>
     <v-row
       class="fill-height"
       align="center"
@@ -18,7 +19,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col class="d-flex justify-right">
         <v-spacer></v-spacer>
         <v-btn
           color="deep-purple lighten-2"
@@ -42,8 +43,14 @@ export default {
       derectorTitle: "監督メッセージ",
       staffTitle: "スタッフメッセージ",
       otherTitle: "選手一覧ページ",
-      title: "About Us",
+      title: "ABOUT TEAM",
     }
   }
 }
 </script>
+
+<style scoped lang="scss">
+.under {
+  border-bottom: solid 2px red;
+}
+</style>

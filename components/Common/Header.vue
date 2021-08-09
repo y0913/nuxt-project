@@ -74,7 +74,7 @@ export default {
       ],
       drawer: false,
       dialog: false,
-      title: '京都フルカウンツ',
+      title: 'Kyoto Fullcounts Baseball Team',
       root: '/'
     }
   }
