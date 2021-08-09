@@ -49,10 +49,3 @@ export default {
   }
 }
 </script>
-
-<style scoped lang="scss">
-.bg {
-    background-image: url("~@/assets/images/common/common.JPG");
-    background-size: contain;
-}
-</style>
