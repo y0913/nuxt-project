@@ -4,10 +4,13 @@
       <Carousel />
     </div>
     <div class="mb-10">
+      <About />
+    </div>
+    <div class="mb-10">
       <Players />
     </div>
     <div class="mb-10">
-      <About />
+      <Teaminfo />
     </div>
     <div class="mb-10">
       <News />
@@ -20,13 +23,16 @@ import Carousel from '~/components/top/Carousel.vue'
 import About from '~/components/top/About.vue'
 import Players from '~/components/top/Players.vue'
 import News from '~/components/top/News.vue'
+import Teaminfo from '~/components/top/Teaminfo.vue'
+
 export default {
   name: 'App',
   components: {
    Carousel,
    About,
    Players,
-   News
+   News,
+   Teaminfo
   },
   data () {
     return {

@@ -1,21 +1,19 @@
 <template>
   <div class="hero">
     <v-img
-      :src="top"
+      src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
       class="white--text align-end"
       height="600"
       >
       </v-img>
   </div>
 </template>
-
 <script>
-import top from '../../assets/images/top/top.JPG'
+
 export default {
-  name: 'About',
-  data () {
+  data() {
     return {
-      top: top
+      title: '監督メッセージ'
     }
   }
 }
