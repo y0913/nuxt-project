@@ -25,7 +25,7 @@
               height="250"
             >
             </v-img>
-            <v-card-title>{{aboutTitle}}</v-card-title>
+            <v-card-title>タイトル考える</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -61,7 +61,7 @@
               height="250"
             >
             </v-img>
-            <v-card-title>{{staffTitle}}</v-card-title>
+            <v-card-title>タイトル考える</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -97,7 +97,7 @@
               height="250"
             >
             </v-img>
-            <v-card-title>{{otherTitle}}</v-card-title>
+            <v-card-title>タイトル考える</v-card-title>
             <v-card-text>
               <v-row
                 align="center"

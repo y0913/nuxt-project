@@ -11,6 +11,7 @@
 <script>
 
 export default {
+  name: 'team',
   data() {
     return {
       title: '監督メッセージ'

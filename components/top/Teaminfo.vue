@@ -11,6 +11,9 @@
         <v-card
           class="mx-auto my-12"
           max-width="374"
+          :to="{
+            name: 'team'
+          }"
         >
             <template slot="progress">
               <v-progress-linear
@@ -34,14 +37,6 @@
             <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
             </v-row>
           </v-card-text>
-          <v-card-actions>
-            <v-btn
-              color="deep-purple lighten-2"
-              text
-            >
-              詳細
-            </v-btn>
-          </v-card-actions>
         </v-card>
 
         <v-card
@@ -129,7 +124,7 @@ export default {
       derectorTitle: "監督メッセージ",
       staffTitle: "スタッフメッセージ",
       otherTitle: "選手一覧ページ",
-      title: "TEAMINFO",
+      title: "TEAM INFO",
       titleJp: "チーム情報",
       top: top
     }
