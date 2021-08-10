@@ -89,3 +89,5 @@ sw.*
 # Vim swap files
 *.swp
 
+# 個人のタスク記録ファイル
+todo.txt
