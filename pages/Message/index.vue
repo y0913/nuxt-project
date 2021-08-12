@@ -13,10 +13,14 @@
         <v-img
           :src="derector"
           height="600"
+          width="400"
           contain
         ></v-img>
       </v-col>
       <v-col cols=6>
+        <div class="title">
+          <strong>【タイトルあればここに】</strong>
+        </div>
         <div class="message">
           監督の小澤です。
           なんかメッセージを考えてもらう。<br />
