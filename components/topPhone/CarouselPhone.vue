@@ -1,6 +1,6 @@
 <template>
   <v-carousel
-    class="carousel pa-5"
+    class="carousel px-5 pb-5"
     cycle
     height="374"
     hide-delimiters

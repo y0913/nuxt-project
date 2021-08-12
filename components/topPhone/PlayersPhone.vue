@@ -38,7 +38,7 @@
                 align="center"
                 class="mx-0"
               >
-              <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
+              <div>ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /></div>
               </v-row>
             </v-card-text>
           </v-card>
@@ -72,7 +72,7 @@
                 align="center"
                 class="mx-0"
               >
-              <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
+              <div>ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /></div>
               </v-row>
             </v-card-text>
           </v-card>
@@ -106,7 +106,7 @@
                 align="center"
                 class="mx-0"
               >
-              <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
+              <div>ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /></div>
               </v-row>
             </v-card-text>
           </v-card>

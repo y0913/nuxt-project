@@ -6,29 +6,28 @@
       flat
       color="#FFFFFF"
       dark
-      elevate-on-scroll
+      hide-on-scroll
     >
-      <v-app-bar-nav-icon
-        style="color: black;"
-        @click="drawer = true"
-        >
-      </v-app-bar-nav-icon>
-
       <v-toolbar-title
         style="color: black;"
-        class="font-weight-bold text-center"
         >
-        {{title}}
+        <v-btn
+          text
+          plain
+          :to="root"
+          color="black"
+          class="font-weight-bold text-center"
+          style="font-size: 1.0em;"
+        >
+          {{title}}
+        </v-btn>
       </v-toolbar-title>
     </v-app-bar>
 
     <v-navigation-drawer
       v-model="drawer"
       absolute
-      temporary
-      fixed
-      :clipped="false"
-      app
+      top
     >
       <v-list
         nav
@@ -38,6 +37,13 @@
           v-model="group"
           active-class="deep-purple--text text--accent-4"
         >
+          <v-list-item>
+            <v-list-item-icon>
+              <v-icon>mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
           <v-list-item>
             <v-list-item-icon>
               <v-icon>mdi-home</v-icon>

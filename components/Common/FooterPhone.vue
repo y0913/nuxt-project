@@ -1,15 +1,39 @@
 <template>
-    <v-footer
-      :absolute="fixed"
-      app
-    >
-      <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab>Tab 1</v-tab>
-          <v-tab>Tab 2</v-tab>
-          <v-tab>Tab 3</v-tab>
-        </v-tabs>
-      </template>
+    <v-footer>
+        <v-bottom-navigation
+          sticky
+          horizontal
+          fixed
+          :hide-on-scroll = "false"
+          scroll-target="#hide-on-scroll-example"
+        >
+          <v-btn
+            color="deep-purple accent-4"
+            text
+          >
+            <span>Recents</span>
+
+            <v-icon>mdi-history</v-icon>
+          </v-btn>
+
+          <v-btn
+            color="deep-purple accent-4"
+            text
+          >
+            <span>Favorites</span>
+
+            <v-icon>mdi-heart</v-icon>
+          </v-btn>
+
+          <v-btn
+            color="deep-purple accent-4"
+            text
+          >
+            <span>Nearby</span>
+
+            <v-icon>mdi-map-marker</v-icon>
+          </v-btn>
+        </v-bottom-navigation>
     </v-footer>
 </template>
 
