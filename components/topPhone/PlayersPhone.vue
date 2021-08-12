@@ -1,5 +1,5 @@
 <template>
-  <div class="players">
+  <div class="players pa-20">
     <div class="headline font-weight-bold">{{ title }}</div>
     <div><span class="under">{{ titleJp }}</span></div>
     <v-row
@@ -9,7 +9,7 @@
     >
       <v-col class="d-flex justify-center scroll">
           <v-card
-            class="mx-auto my-12 scroll"
+            class="mx-auto my-12 scroll-item"
             max-width="374"
             :to="{
               name: 'players-id',
@@ -43,7 +43,7 @@
             </v-card-text>
           </v-card>
           <v-card
-            class="mx-auto my-12 scroll"
+            class="mx-auto my-12 scroll-item"
             max-width="374"
             :to="{
               name: 'players-id',
@@ -77,7 +77,7 @@
             </v-card-text>
           </v-card>
           <v-card
-            class="mx-auto my-12 scroll"
+            class="mx-auto my-12 scroll-item"
             max-width="374"
             :to="{
               name: 'players-id',
@@ -138,6 +138,9 @@ export default {
   border-bottom: solid 2px red;
 }
 .scroll {
-  overflow-x: scroll;
+  overflow-x: auto;
+  .scroll-item {
+    flex: 0 0 auto;
+  }
 }
 </style>

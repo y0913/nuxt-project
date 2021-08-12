@@ -1,8 +1,8 @@
 <template>
   <div class="top">
-    <div class="mb-10">
+    <!-- <div class="mb-10">
       <Carousel />
-    </div>
+    </div> -->
     <div class="mb-10">
       <About />
     </div>
@@ -26,7 +26,7 @@ import News from '~/components/top/News.vue'
 import Teaminfo from '~/components/topPhone/TeaminfoPhone.vue'
 
 export default {
-  name: 'topPc',
+  name: 'topPone',
   components: {
    Carousel,
    About,

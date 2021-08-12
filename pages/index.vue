@@ -1,17 +1,19 @@
 <template>
   <div>
-    <!-- <topPhone v-if="isSmartphone()"/> -->
-    <topPc />
+    <topPhone v-if="isSmartphone()"/>
+    <topPc v-else />
   </div>
 </template>
 
 <script>
 import topPc from '@/components/_pages/pc/top.vue'
+import topPhone from '@/components/_pages/smartphone/topSm.vue'
 
 export default {
   name: 'top',
   components: {
-    topPc
+    topPc,
+    topPhone
   },
   data () {
     return {
