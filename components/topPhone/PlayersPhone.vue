@@ -9,7 +9,7 @@
     >
       <v-col class="d-flex scroll">
           <v-card
-            class="mx-auto my-12 scroll-item"
+            class="mx-auto my-12 scroll-item pa-3"
             max-width="374"
             :to="{
               name: 'players-id',
@@ -43,7 +43,7 @@
             </v-card-text>
           </v-card>
           <v-card
-            class="mx-auto my-12 scroll-item"
+            class="mx-auto my-12 scroll-item pa-3"
             max-width="374"
             :to="{
               name: 'players-id',
@@ -77,7 +77,7 @@
             </v-card-text>
           </v-card>
           <v-card
-            class="mx-auto my-12 scroll-item"
+            class="mx-auto my-12 scroll-item pa-3"
             max-width="374"
             :to="{
               name: 'players-id',

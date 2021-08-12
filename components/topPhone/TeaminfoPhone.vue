@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="teaminfo pa-5">
     <div class="headline font-weight-bold">{{ title }}</div>
     <div><span class="under">{{ titleJp }}</span></div>
     <v-row
@@ -7,9 +7,9 @@
       align="center"
       justify="center"
     >
-      <v-col class="d-flex justify-center" justify="center" align-content="center">
+      <v-col class="d-flex scroll">
         <v-card
-          class="mx-auto my-12"
+          class="mx-auto my-12 scroll-item pa-3"
           max-width="374"
           :to="{
             name: 'message'
@@ -40,7 +40,7 @@
         </v-card>
 
         <v-card
-          class="mx-auto my-12"
+          class="mx-auto my-12 scroll-item pa-3"
           max-width="374"
         >
             <template slot="progress">
@@ -68,7 +68,7 @@
         </v-card>
 
         <v-card
-          class="mx-auto my-12"
+          class="mx-auto my-12 scroll-item pa-3"
           max-width="374"
         >
             <template slot="progress">
@@ -100,7 +100,6 @@
 </template>
 
 <script>
-import top from '../../assets/images/top/top.JPG'
 export default {
   name: 'Teaminfo',
   data () {
@@ -110,7 +109,6 @@ export default {
       otherTitle: "選手一覧ページ",
       title: "TEAM INFO",
       titleJp: "チーム情報",
-      top: top
     }
   }
 }
@@ -119,5 +117,11 @@ export default {
 <style scoped lang="scss">
 .under {
   border-bottom: solid 2px red;
+}
+.scroll {
+  overflow-x: auto;
+  .scroll-item {
+    flex: 0 0 auto;
+  }
 }
 </style>

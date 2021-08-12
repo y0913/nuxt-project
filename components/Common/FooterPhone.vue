@@ -5,33 +5,30 @@
           horizontal
           fixed
           :hide-on-scroll = "false"
-          scroll-target="#hide-on-scroll-example"
+
         >
           <v-btn
             color="deep-purple accent-4"
             text
           >
-            <span>Recents</span>
-
-            <v-icon>mdi-history</v-icon>
+            <span>ABOUT</span>
+            <v-icon>mdi-debug-step-over</v-icon>
           </v-btn>
 
           <v-btn
             color="deep-purple accent-4"
             text
           >
-            <span>Favorites</span>
-
-            <v-icon>mdi-heart</v-icon>
+            <span>PLAYERS</span>
+            <v-icon>mdi-account-multiple</v-icon>
           </v-btn>
 
           <v-btn
             color="deep-purple accent-4"
             text
           >
-            <span>Nearby</span>
-
-            <v-icon>mdi-map-marker</v-icon>
+            <span>JOIN</span>
+            <v-icon>mdi-thumb-up</v-icon>
           </v-btn>
         </v-bottom-navigation>
     </v-footer>

@@ -1,8 +1,9 @@
 <template>
   <v-carousel
-    class="carousel px-5 pb-5"
+    class="carousel pb-5"
     cycle
     height="374"
+    width="100%"
     hide-delimiters
     :show-arrows="false"
   >
