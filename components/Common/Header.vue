@@ -60,15 +60,15 @@ export default {
     return {
       menus:[
         {
-          root:"about",
+          root:"/about",
           name:"About"
         },
         {
-          root:"players",
+          root:"/players",
           name:"Players"
         },
         {
-          root:"join",
+          root:"/join",
           name:"Join Team?"
         },
       ],
