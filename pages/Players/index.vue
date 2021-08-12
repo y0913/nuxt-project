@@ -1,10 +1,10 @@
 <template>
 <div class="players">
+  <div class="hero">
   <div class="ma-10">
     <div class="headline font-weight-bold">PLAYERS</div>
     <div><span class="under">フルカウンツの主役たち</span></div>
   </div>
-  <div class="hero">
     <v-img
       :src="top"
       class="white--text align-end"

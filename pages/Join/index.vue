@@ -1,9 +1,9 @@
 <template>
   <div class="hero">
-  <div class="ma-10">
-    <div class="headline font-weight-bold">{{title}}</div>
-    <div><span class="under">選手募集</span></div>
-  </div>
+    <div class="ma-10">
+      <div class="headline font-weight-bold">{{title}}</div>
+      <div><span class="under">選手募集</span></div>
+    </div>
     <v-card>
       <v-img
         :src="top"
