@@ -61,7 +61,7 @@ export default {
       menus:[
         {
           root:"about",
-          name:"About Team"
+          name:"About"
         },
         {
           root:"players",

@@ -1,5 +1,5 @@
 <template>
-  <div class="players">
+  <div class="players pa-5">
     <div class="headline font-weight-bold">{{ title }}</div>
     <div><span class="under">{{ titleJp }}</span></div>
     <v-row
@@ -7,9 +7,9 @@
       align="center"
       justify="center"
     >
-      <v-col class="d-flex justify-center" justify="center" align-content="center">
+      <v-col class="d-flex scroll">
           <v-card
-            class="mx-auto my-12"
+            class="mx-auto my-12 scroll-item pa-3"
             max-width="374"
             :to="{
               name: 'players-id',
@@ -38,14 +38,19 @@
                 align="center"
                 class="mx-0"
               >
-              <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
+              <div>ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /></div>
               </v-row>
             </v-card-text>
           </v-card>
-
           <v-card
-            class="mx-auto my-12"
+            class="mx-auto my-12 scroll-item pa-3"
             max-width="374"
+            :to="{
+              name: 'players-id',
+              params: {
+                id: 1
+              }
+            }"
           >
               <template slot="progress">
                 <v-progress-linear
@@ -67,14 +72,19 @@
                 align="center"
                 class="mx-0"
               >
-              <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
+              <div>ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /></div>
               </v-row>
             </v-card-text>
           </v-card>
-
           <v-card
-            class="mx-auto my-12"
+            class="mx-auto my-12 scroll-item pa-3"
             max-width="374"
+            :to="{
+              name: 'players-id',
+              params: {
+                id: 1
+              }
+            }"
           >
               <template slot="progress">
                 <v-progress-linear
@@ -96,7 +106,7 @@
                 align="center"
                 class="mx-0"
               >
-              <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
+              <div>ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /> ここに説明を書く<br /></div>
               </v-row>
             </v-card-text>
           </v-card>
@@ -126,5 +136,11 @@ export default {
 <style scoped lang="scss">
 .under {
   border-bottom: solid 2px red;
+}
+.scroll {
+  overflow-x: auto;
+  .scroll-item {
+    flex: 0 0 auto;
+  }
 }
 </style>

@@ -1,38 +1,19 @@
 <template>
-  <div class="top">
-    <div class="mb-10">
-      <Carousel />
-    </div>
-    <div class="mb-10">
-      <About />
-    </div>
-    <div class="mb-10">
-      <Players />
-    </div>
-    <div class="mb-10">
-      <Teaminfo />
-    </div>
-    <div class="mb-10">
-      <News />
-    </div>
+  <div>
+    <topPhone v-if="isSmartphone()"/>
+    <topPc v-else />
   </div>
 </template>
 
 <script>
-import Carousel from '~/components/top/Carousel.vue'
-import About from '~/components/top/About.vue'
-import Players from '~/components/top/Players.vue'
-import News from '~/components/top/News.vue'
-import Teaminfo from '~/components/top/Teaminfo.vue'
+import topPc from '@/components/_pages/pc/top.vue'
+import topPhone from '@/components/_pages/smartphone/topSm.vue'
 
 export default {
-  name: 'App',
+  name: 'top',
   components: {
-   Carousel,
-   About,
-   Players,
-   News,
-   Teaminfo
+    topPc,
+    topPhone
   },
   data () {
     return {
@@ -43,6 +24,11 @@ export default {
       right: true,
       rightDrawer: false,
     }
+  },
+  methods: {
+    isSmartphone(){
+      return this.$ua.isFromSmartphone()
+      }
   }
 }
 </script>

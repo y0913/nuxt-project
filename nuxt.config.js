@@ -71,5 +71,9 @@ export default {
         options.loose = true
       },
     },
+  },
+   // 画面遷移時の初期位置を設定
+   scrollBehavior: function(to, from, savedPosition) {
+    return { x:0, y:0 }
   }
 }

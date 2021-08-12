@@ -1,7 +1,9 @@
 <template>
-  <div class="about">
-    <div class="headline font-weight-bold">{{ title }}</div>
-    <div><span class="under">京都フルカウンツについて</span></div>
+  <div class="about pa-5">
+    <div class="mb-5">
+      <div class="headline font-weight-bold">{{ title }}</div>
+      <div><span class="under">京都フルカウンツについて</span></div>
+    </div>
     <v-row
       class="fill-height"
       align="center"
@@ -48,5 +50,8 @@ export default {
 <style scoped lang="scss">
 .under {
   border-bottom: solid 2px red;
+}
+.scroll {
+  overflow-x: auto;
 }
 </style>

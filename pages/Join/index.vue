@@ -1,7 +1,8 @@
 <template>
   <div class="hero">
-    <div class="headline font-weight-bold">
-      {{title}}
+    <div class="ma-10">
+      <div class="headline font-weight-bold">{{title}}</div>
+      <div><span class="under">選手募集</span></div>
     </div>
     <v-card>
       <v-img
@@ -29,9 +30,15 @@ export default {
   name: 'Players',
   data () {
     return {
-      title: "選手募集",
+      title: "RECRUITMENT",
       top: top,
     }
   }
 }
 </script>
+
+<style scoped lang="scss">
+.under {
+  border-bottom: solid 2px red;
+}
+</style>
