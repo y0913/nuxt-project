@@ -9,9 +9,9 @@
     <div class="mb-10">
       <Players />
     </div>
-    <div class="mb-10">
+    <!-- <div class="mb-10">
       <Teaminfo />
-    </div>
+    </div> -->
     <div class="mb-10">
       <News />
     </div>
