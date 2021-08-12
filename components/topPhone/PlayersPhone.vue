@@ -7,7 +7,7 @@
       align="center"
       justify="center"
     >
-      <v-col class="d-flex justify-center scroll">
+      <v-col class="d-flex scroll">
           <v-card
             class="mx-auto my-12 scroll-item"
             max-width="374"
