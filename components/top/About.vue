@@ -39,9 +39,6 @@ export default {
   name: 'About',
   data () {
     return {
-      derectorTitle: "監督メッセージ",
-      staffTitle: "スタッフメッセージ",
-      otherTitle: "選手一覧ページ",
       title: "ABOUT TEAM",
     }
   }

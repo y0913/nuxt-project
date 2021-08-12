@@ -12,7 +12,7 @@
           class="mx-auto my-12"
           max-width="374"
           :to="{
-            name: 'team'
+            name: 'message'
           }"
         >
             <template slot="progress">
@@ -65,14 +65,6 @@
             <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
             </v-row>
           </v-card-text>
-          <v-card-actions>
-            <v-btn
-              color="deep-purple lighten-2"
-              text
-            >
-              詳細
-            </v-btn>
-          </v-card-actions>
         </v-card>
 
         <v-card
@@ -101,14 +93,6 @@
             <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
             </v-row>
           </v-card-text>
-          <v-card-actions>
-            <v-btn
-              color="deep-purple lighten-2"
-              text
-            >
-              詳細
-            </v-btn>
-          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>

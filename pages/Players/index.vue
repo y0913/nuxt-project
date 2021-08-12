@@ -1,5 +1,9 @@
 <template>
 <div class="players">
+  <div class="ma-10">
+    <div class="headline font-weight-bold">PLAYERS</div>
+    <div><span class="under">フルカウンツの主役たち</span></div>
+  </div>
   <div class="hero">
     <v-img
       :src="top"
@@ -32,7 +36,7 @@
               height="250"
             >
             </v-img>
-            <v-card-title>{{aboutTitle}}</v-card-title>
+            <v-card-title>タイトル考える</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -68,7 +72,7 @@
               height="250"
             >
             </v-img>
-            <v-card-title>{{staffTitle}}</v-card-title>
+            <v-card-title>タイトル考える</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -104,7 +108,7 @@
               height="250"
             >
             </v-img>
-            <v-card-title>{{otherTitle}}</v-card-title>
+            <v-card-title>タイトル考える</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -141,3 +145,9 @@ export default {
   }
 }
 </script>
+
+<style scoped lang="scss">
+.under {
+  border-bottom: solid 2px red;
+}
+</style>
