@@ -1,8 +1,8 @@
 <template>
   <div class="top">
-    <!-- <div class="mb-10">
+    <div class="mb-10">
       <Carousel />
-    </div> -->
+    </div>
     <div class="mb-10">
       <About />
     </div>

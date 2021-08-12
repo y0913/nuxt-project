@@ -1,5 +1,5 @@
 <template>
-  <div class="players pa-20">
+  <div class="players pa-5">
     <div class="headline font-weight-bold">{{ title }}</div>
     <div><span class="under">{{ titleJp }}</span></div>
     <v-row

@@ -6,6 +6,7 @@
       flat
       color="#FFFFFF"
       dark
+      elevate-on-scroll
     >
       <v-app-bar-nav-icon
         style="color: black;"
@@ -25,6 +26,9 @@
       v-model="drawer"
       absolute
       temporary
+      fixed
+      :clipped="false"
+      app
     >
       <v-list
         nav
