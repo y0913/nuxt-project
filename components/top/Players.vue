@@ -11,6 +11,12 @@
           <v-card
             class="mx-auto my-12"
             max-width="374"
+            :to="{
+              name: 'players-id',
+              params: {
+                id: player_id
+              }
+            }"
           >
               <template slot="progress">
                 <v-progress-linear
@@ -20,12 +26,13 @@
                 ></v-progress-linear>
               </template>
             <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+              :src="umami"
               class="white--text align-end"
               height="250"
+              cover
             >
             </v-img>
-            <v-card-title>タイトル考える</v-card-title>
+            <v-card-title>うまみ</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -34,14 +41,6 @@
               <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
               </v-row>
             </v-card-text>
-            <v-card-actions>
-              <v-btn
-                color="deep-purple lighten-2"
-                text
-              >
-                詳細
-              </v-btn>
-            </v-card-actions>
           </v-card>
 
           <v-card
@@ -56,12 +55,13 @@
                 ></v-progress-linear>
               </template>
             <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+              :src="kouno"
               class="white--text align-end"
               height="250"
+              cover
             >
             </v-img>
-            <v-card-title>タイトル考える</v-card-title>
+            <v-card-title>こうの</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -70,14 +70,6 @@
               <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
               </v-row>
             </v-card-text>
-            <v-card-actions>
-              <v-btn
-                color="deep-purple lighten-2"
-                text
-              >
-                詳細
-              </v-btn>
-            </v-card-actions>
           </v-card>
 
           <v-card
@@ -92,12 +84,13 @@
                 ></v-progress-linear>
               </template>
             <v-img
-              src="https://cdn.vuetifyjs.com/images/cards/plane.jpg"
+              :src="hashimoto"
               class="white--text align-end"
               height="250"
+              cover
             >
             </v-img>
-            <v-card-title>タイトル考える</v-card-title>
+            <v-card-title>レイカーズ</v-card-title>
             <v-card-text>
               <v-row
                 align="center"
@@ -106,14 +99,6 @@
               <div>ここに説明を書く ここに説明を書く ここに説明を書く ここに説明を書く</div>
               </v-row>
             </v-card-text>
-            <v-card-actions>
-              <v-btn
-                color="deep-purple lighten-2"
-                text
-              >
-                詳細
-              </v-btn>
-            </v-card-actions>
           </v-card>
       </v-col>
     </v-row>
@@ -121,12 +106,18 @@
 </template>
 
 <script>
+import hashimoto from '../../assets/images/players/hashimoto.JPG'
+import kouno from '../../assets/images/players/kouno.JPG'
+import umami from '../../assets/images/players/umami.JPG'
 export default {
   name: 'Players',
   data () {
     return {
       title: "PICK UP PLAYERS",
-      titleJp: '注目選手'
+      titleJp: '注目選手',
+      umami: umami,
+      kouno: kouno,
+      hashimoto: hashimoto
     }
   }
 }
