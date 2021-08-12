@@ -14,7 +14,7 @@
             :to="{
               name: 'players-id',
               params: {
-                id: player_id
+                id: 1
               }
             }"
           >
